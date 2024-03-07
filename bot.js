@@ -38,25 +38,37 @@ function generateBotResponse(userMessage) {
     var lowerCaseMessage = userMessage.toLowerCase();
 
     if (lowerCaseMessage.includes("hi")) {
-        response = "Hello there! How can I help you?";
+        response = "Hello there! How are you today?";
     } else if (lowerCaseMessage.includes("how are you")) {
-        response = "I'm just a bot, but thanks for asking!";
+        response = "I'm just a bot, but thanks for asking! How can I help you today?";
     } else if (lowerCaseMessage.includes("hello")) {
-        response = "Hello there! How can I help you?";
+        response = "Hello there! How are you today?";
     } else if (lowerCaseMessage.includes("good morning")) {
-        response = "Good morning! What can I do for you?";
+        response = "Good morning! How are you today?";
     } else if (lowerCaseMessage.includes("bye") || lowerCaseMessage.includes("goodbye")) {
         response = "Goodbye! Feel free to return anytime.";
     } else if (lowerCaseMessage.includes("help")) {
-        response = "Sure, I'm here to help. What do you need assistance with?";
+        response = "Sure, I'm here to try help. What do you need assistance with?";
     } else if (lowerCaseMessage.includes("how do you work")) {
         response = "It's a secret";
+    } else if (lowerCaseMessage.includes("what is the meaning of life")) {
+        response = "The meaning of life is to find purpose. Find your purpose and you will know the meaning of life.";
+    } else if (lowerCaseMessage.includes("are you real?")) {
+        response = "I am not. I am merely a bot";
+    } else if (lowerCaseMessage.includes("what is the weather")) {
+        response = "It's probably best to consult the weather statio rather than an AI bot for the weather!";
+    } else if (lowerCaseMessage.includes("what is your name") || lowerCaseMessage.includes("your name")) {
+        response = "My name is Noddy.";
+    }     else if (lowerCaseMessage.includes("this is fun")) {
+        response = "I should hope so!";
+    } else if (lowerCaseMessage.includes("can you code")) {
+        response = "I'm a code pro!";
     } else if (lowerCaseMessage.includes("how do you work?")) {
         response = "It's a secret";
-    } else if (lowerCaseMessage.includes("how do this work?")) {
-        response = "It's a secret";
+    } else if (lowerCaseMessage.includes("What is the time")) {
+        response = "Check your watch for the time!";
     } else {
-        response = "I'm sorry, I didn't understand that. Can you please rephrase?";
+        response = "My field of knowledge is limited (for now). Can you rephrase that in a way that I might understand?";
     }
 
     return response;
