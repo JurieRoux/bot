@@ -39,7 +39,7 @@ function generateBotResponse(userMessage) {
 
     if (lowerCaseMessage.includes("hi")) {
         response = "Hello there! How are you today?";
-    } else if (lowerCaseMessage.includes("how are you")) {
+    } else if (lowerCaseMessage.includes("how are you") || lowerCaseMessage.includes("how are you"))  {
         response = "I'm just a bot, but thanks for asking! How can I help you today?";
     } else if (lowerCaseMessage.includes("hello")) {
         response = "Hello there! How are you today?";
