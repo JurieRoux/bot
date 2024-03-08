@@ -50,8 +50,8 @@ function generateBotResponse(userMessage) {
         response = "It's a secret";
     } else if (lowerCaseMessage.includes("what is the meaning of life") || lowerCaseMessage.includes("meaning of life")) {
         response = "The meaning of life is to find purpose. Find your purpose and you will know the meaning of life.";
-    } else if (lowerCaseMessage.includes("are you real?") || lowerCaseMessage.includes("real person")) {
-        response = "I am not. I am merely a bot";
+    } else if (lowerCaseMessage.includes("are you happy") || lowerCaseMessage.includes("happy")) {
+        response = "Noddy always smiles :) ";
     } else if (lowerCaseMessage.includes("what is the weather") || lowerCaseMessage.includes("weather")) {
         response = "It's probably best to consult the weather station rather than a bot for the weather!";
     } else if (lowerCaseMessage.includes("what is your name") || lowerCaseMessage.includes("your name")) {
@@ -94,15 +94,16 @@ function generateBotResponse(userMessage) {
         response = "Feeling this by Blink 182";
     } else if (lowerCaseMessage.includes("are aliens real") || lowerCaseMessage.includes("aliens")) {
         response = "What is more frightening... That we are not alone in the universe or that we are?";
-    } 
-    else if (lowerCaseMessage.includes("yes") || lowerCaseMessage.includes("yes")) {
+    }  else if (lowerCaseMessage.includes("yes") || lowerCaseMessage.includes("yes")) {
         response = "Give some more context to that yes";
     } else if (lowerCaseMessage.includes("no") || lowerCaseMessage.includes("no")) {
         response = "Give some more context to that no";
+    } else if (lowerCaseMessage.includes("are you real") || lowerCaseMessage.includes("real")) {
+        response = "I'm just Noddy";
     } 
     
     else {
-        response = "I do not understand the question but I have added it to my databank for the future. Thank you";
+        response = "I do not understand the question &/ context but I have added it to my databank for the future logic interpretation. Thank you";
     }
 
     return response;
