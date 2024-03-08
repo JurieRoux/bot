@@ -100,7 +100,7 @@ function generateBotResponse(userMessage) {
         response = "Give some more context to that no";
     } else if (lowerCaseMessage.includes("are you real") || lowerCaseMessage.includes("real")) {
         response = "I'm just Noddy";
-    } else if (lowerCaseMessage.includes("is god real") || lowerCaseMessage.includes("god real")) {
+    } else if (lowerCaseMessage.includes("is god real") || lowerCaseMessage.includes("god")) {
         response = "Science has advanced in the last 100 years only further proving the existence of a supreme being / God";
     } 
     else {
