@@ -100,17 +100,14 @@ function generateBotResponse(userMessage) {
         response = "Give some more context to that no";
     } else if (lowerCaseMessage.includes("are you real") || lowerCaseMessage.includes("real")) {
         response = "I'm just Noddy";
+    } else if (lowerCaseMessage.includes("is god real") || lowerCaseMessage.includes("god real")) {
+        response = "Science has advanced in the last 100 years only further proving the existence of a supreme being / God";
     } 
-    
     else {
         response = "I do not understand the question &/ context but I have added it to my databank for the future logic interpretation. Thank you";
     }
-
     return response;
 }
-
-
-
 function displayMessage(sender, message) {
     var chatArea = document.getElementById("chatArea");
     var messageElement = document.createElement("div");
