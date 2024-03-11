@@ -65,6 +65,9 @@ function generateBotResponse(userMessage) {
         lowerCaseMessage.includes("are aliens real") || lowerCaseMessage.includes("aliens") ? "What is more frightening... That we are not alone in the universe or that we are?" :
         lowerCaseMessage.includes("yes") || lowerCaseMessage.includes("yes") ? "Give some more context to that yes" :
         lowerCaseMessage.includes("no") || lowerCaseMessage.includes("no") ? "Give some more context to that no" :
+        lowerCaseMessage.includes("good") || lowerCaseMessage.includes("good") ? "Glad to hear it!" :
+        lowerCaseMessage.includes("no") || lowerCaseMessage.includes("no") ? "I'm sorry to hear that." :
+        lowerCaseMessage.includes("you") || lowerCaseMessage.includes("you") ? "You is me and I am You" :
         "I do not understand the question but I have added it to my databank for the future. Thank you";
 
     return response;
