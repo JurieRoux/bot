@@ -83,3 +83,4 @@ function displayMessage(sender, message) {
     chatArea.scrollTop = chatArea.scrollHeight;
 }
 // Test
+// test
