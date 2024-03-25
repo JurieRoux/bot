@@ -138,5 +138,3 @@ document.addEventListener("DOMContentLoaded", function () {
     chatArea.scrollTop = chatArea.scrollHeight;
   }
   
-  // Test
-// Test3.0
